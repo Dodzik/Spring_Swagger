@@ -18,4 +18,6 @@ public interface IReportService {
     void updateReport(Report report);
 
     List<Report> getBySeverity(String severity);
+
+    List<Report> getByStatus(String status);
 }

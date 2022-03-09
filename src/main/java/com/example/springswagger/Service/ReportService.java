@@ -43,5 +43,9 @@ public class ReportService implements IReportService{
     public List<Report> getBySeverity(String severity){
         return reportRepository.findBySeverityIs(severity);
     }
+    @Override
+    public List<Report> getByStatus(String status){
+        return reportRepository.findByStatusIs(status);
+    }
 
 }

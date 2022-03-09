@@ -24,7 +24,7 @@ public class BootStrapData implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         String[] severityExamples = {"low", "medium", "high"};
         String[] statusExamples = {"new", "in progress", "done"};
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
