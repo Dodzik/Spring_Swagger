@@ -1,7 +1,7 @@
-package com.example.taskcisco.Service;
+package com.example.springswagger.Service;
 
-import com.example.taskcisco.Model.Report;
-import com.example.taskcisco.Repository.ReportRepository;
+import com.example.springswagger.Model.Report;
+import com.example.springswagger.Repository.ReportRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +30,16 @@ public class ReportService implements IReportService{
 
     @Override
     public void saveReport(Report report) {
+        reportRepository.save(report);
+    }
+
+    @Override
+    public void deleteReport(Long reportId) {
+        reportRepository.deleteById(reportId);
+    }
+
+    @Override
+    public void updateReport(Report report) {
         reportRepository.save(report);
     }
 }

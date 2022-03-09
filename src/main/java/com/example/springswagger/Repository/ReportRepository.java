@@ -1,6 +1,6 @@
-package com.example.taskcisco.Repository;
+package com.example.springswagger.Repository;
 
-import com.example.taskcisco.Model.Report;
+import com.example.springswagger.Model.Report;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

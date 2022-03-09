@@ -1,6 +1,4 @@
-package com.example.taskcisco.Model;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+package com.example.springswagger.Model;
 
 import javax.persistence.*;
 import java.util.Objects;

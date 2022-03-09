@@ -1,7 +1,7 @@
-package com.example.taskcisco.Service;
+package com.example.springswagger.Service;
 
 
-import com.example.taskcisco.Model.Report;
+import com.example.springswagger.Model.Report;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,4 +12,8 @@ public interface IReportService {
     Optional<Report> getReport(Long reportId);
 
     void saveReport(Report report);
+
+    void deleteReport(Long reportId);
+
+    void updateReport(Report report);
 }

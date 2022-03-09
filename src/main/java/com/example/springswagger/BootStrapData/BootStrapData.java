@@ -1,7 +1,7 @@
-package com.example.taskcisco.BootStrapData;
+package com.example.springswagger.BootStrapData;
 
-import com.example.taskcisco.Model.Report;
-import com.example.taskcisco.Repository.ReportRepository;
+import com.example.springswagger.Model.Report;
+import com.example.springswagger.Repository.ReportRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
