@@ -29,8 +29,8 @@ class SpringSwaggerApplicationTests {
     public void testDeleteReport() {
         Report generic = new Report("TEST", "TEST", "TEST", "TEST", "TEST");
         reportService.saveReport(generic);
-        reportService.deleteReport(2L);
-        Optional<Report> found = reportService.getReport(2L);
+        reportService.deleteReport(generic.getId());
+        Optional<Report> found = reportService.getReport(generic.getId());
         assertEquals(Optional.empty(), found);
     }
 

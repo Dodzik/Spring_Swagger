@@ -1,8 +1,5 @@
 package com.example.springswagger.Model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import io.swagger.annotations.ApiModelProperty;
-
 import javax.persistence.*;
 import java.util.Objects;
 
