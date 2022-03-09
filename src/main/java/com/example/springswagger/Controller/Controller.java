@@ -26,6 +26,11 @@ public class Controller {
         return reportService.getReport(reportId);
     }
 
+    @GetMapping("/api/reports/severity/{reportSeverity}")
+    public List<Report> getBySeverity(@PathVariable String reportSeverity) {
+        return reportService.getBySeverity(reportSeverity);
+    }
+
     @PostMapping("/api/reports")
     public void saveReport(Report report){
         reportService.saveReport(report);
@@ -44,5 +49,4 @@ public class Controller {
             reportService.updateReport(report);
         }
     }
-
 }

@@ -14,10 +14,6 @@ public class ReportService implements IReportService{
     @Autowired
     private ReportRepository reportRepository;
 
-
-    public void setReportRepository(ReportRepository reportRepository) {
-        this.reportRepository = reportRepository;
-    }
     @Override
     public List<Report> retriveReports() {
         return reportRepository.findAll();
@@ -42,4 +38,10 @@ public class ReportService implements IReportService{
     public void updateReport(Report report) {
         reportRepository.save(report);
     }
+
+    @Override
+    public List<Report> getBySeverity(String severity){
+        return reportRepository.findBySeverityIs(severity);
+    }
+
 }

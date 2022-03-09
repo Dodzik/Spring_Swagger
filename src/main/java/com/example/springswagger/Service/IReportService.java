@@ -16,4 +16,6 @@ public interface IReportService {
     void deleteReport(Long reportId);
 
     void updateReport(Report report);
+
+    List<Report> getBySeverity(String severity);
 }

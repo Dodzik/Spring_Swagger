@@ -1,29 +1,32 @@
 package com.example.springswagger.Model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name="REPORTS")
+@Table(name = "REPORTS")
 public class Report {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="TITLE")
+    @Column(name = "TITLE")
     private String title;
-    @Column(name="DESCRIPTION")
+    @Column(name = "DESCRIPTION")
     private String description;
-    @Column(name="CREATION_DATE")
+    @Column(name = "CREATION_DATE")
     private String creationDate;
-    @Column(name="SEVERITY")
+    @Column(name = "SEVERITY")
     private String severity;
-    @Column(name="STATUS")
+    @Column(name = "STATUS")
     private String status;
 
 
-    public Report( String title, String description, String creationDate, String severity, String status) {
+    public Report(String title, String description, String creationDate, String severity, String status) {
         this.title = title;
         this.description = description;
         this.creationDate = creationDate;
@@ -34,7 +37,6 @@ public class Report {
     public Report() {
 
     }
-
 
     public Long getId() {
         return id;
